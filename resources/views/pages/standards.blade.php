@@ -8,7 +8,7 @@
         <div class="container">
             <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ route('home') }}">Home</a><span>/</span><span>Standards</span></nav>
             <h1>Built to stay readable.</h1>
-            <p class="lead-copy">Awards and registrations will be published when they are real. Until then, these are the rules the screens follow.</p>
+            <p class="lead-copy">These are the rules every IndianKredit screen follows.</p>
         </div>
     </section>
     <section class="section">
@@ -23,8 +23,8 @@
                 @endforeach
             </div>
             <article class="plain-card mt-4">
-                <h2 class="h4">What we will not print early</h2>
-                <p class="mb-0">No borrowed award list, no unnamed “RBI registered” badge, and no customer quote presented as a real review. When a partner, a certificate, or a bureau integration is live, this page gets the name and the date.</p>
+                <h2 class="h4">How an offer is shown</h2>
+                <p class="mb-0">Interest, fees, and the total payable are on the offer before you accept. Repayment stays in the app or on the official repayment page.</p>
             </article>
         </div>
     </section>

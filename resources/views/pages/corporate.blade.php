@@ -25,7 +25,7 @@
                     <article class="plain-card h-100">
                         <p class="kicker">Distributors</p>
                         <h2 class="h4">Channel partner</h2>
-                        <p>Introduce customers to the app. Commission rules will be written down before the first payout.</p>
+                        <p>Introduce customers to the app. Commission is paid on completed applications, on the terms in your partner agreement.</p>
                     </article>
                 </div>
             </div>

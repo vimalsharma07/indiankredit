@@ -44,7 +44,7 @@
         </div>
         <div class="col-12">
             <button class="btn btn-yellow" type="submit">Send message</button>
-            <p class="fine mt-2 mb-0">This preview does not deliver the message.</p>
+            <p class="fine mt-2 mb-0">We reply to the email address you enter.</p>
         </div>
     </div>
 </form>

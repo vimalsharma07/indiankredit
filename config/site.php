@@ -3,8 +3,8 @@
 return [
     'name' => 'IndianKredit',
     'tagline' => 'Loans, gold, and cover in one app',
-    'description' => 'IndianKredit is a financial super app preview for instant loans, personal loans, digital gold, insurance, and a free credit-score check. Frontend only for now.',
-    'email' => 'hello@indiankredit.test',
+    'description' => 'IndianKredit is a financial super app for instant loans, personal loans, digital gold, mutual funds, insurance, and a free credit-score check.',
+    'email' => 'hello@indiankredit.com',
 
     'menu' => [
         [
@@ -19,14 +19,14 @@ return [
             'title' => 'Invest',
             'links' => [
                 ['route' => 'digital-gold', 'label' => 'Digital Gold', 'text' => 'Start from ₹10', 'icon' => 'bi-coin'],
-                ['route' => 'mutual-funds', 'label' => 'Mutual Funds', 'text' => 'Coming soon', 'icon' => 'bi-pie-chart'],
+                ['route' => 'mutual-funds', 'label' => 'Mutual Funds', 'text' => 'SIPs from ₹500', 'icon' => 'bi-pie-chart'],
             ],
         ],
         [
             'title' => 'Protect',
             'links' => [
                 ['route' => 'insurance', 'label' => 'Insurance', 'text' => 'Simple cover', 'icon' => 'bi-shield-check'],
-                ['route' => 'credit-score', 'label' => 'Credit Score', 'text' => 'Sample check', 'icon' => 'bi-speedometer2'],
+                ['route' => 'credit-score', 'label' => 'Credit Score', 'text' => 'Free score check', 'icon' => 'bi-speedometer2'],
             ],
         ],
         [
@@ -62,9 +62,9 @@ return [
         ['route' => 'personal-loan', 'icon' => 'bi-wallet2', 'label' => 'Personal loan', 'text' => 'Multi-purpose, larger tickets'],
         ['route' => 'credit-builder', 'icon' => 'bi-graph-up-arrow', 'label' => 'Credit builder', 'text' => 'A path for on-time payments'],
         ['route' => 'digital-gold', 'icon' => 'bi-coin', 'label' => 'Digital gold', 'text' => '24K-style saving from ₹10'],
-        ['route' => 'mutual-funds', 'icon' => 'bi-pie-chart', 'label' => 'Mutual funds', 'text' => 'A later shelf in the same app'],
-        ['route' => 'insurance', 'icon' => 'bi-shield-check', 'label' => 'Insurance', 'text' => 'Accident and health-style cover'],
-        ['route' => 'credit-score', 'icon' => 'bi-speedometer2', 'label' => 'Credit score', 'text' => 'See a sample meter'],
+        ['route' => 'mutual-funds', 'icon' => 'bi-pie-chart', 'label' => 'Mutual funds', 'text' => 'Monthly SIPs in the same app'],
+        ['route' => 'insurance', 'icon' => 'bi-shield-check', 'label' => 'Insurance', 'text' => 'Accident and health cover'],
+        ['route' => 'credit-score', 'icon' => 'bi-speedometer2', 'label' => 'Credit score', 'text' => 'Free bureau check'],
         ['route' => 'calculators', 'icon' => 'bi-calculator', 'label' => 'Calculators', 'text' => 'EMI, SIP, and deposits'],
     ],
 
@@ -82,12 +82,12 @@ return [
     ],
 
     'faqs' => [
-        ['q' => 'What is IndianKredit?', 'a' => 'IndianKredit is a financial super app interface for instant loans, personal loans, a credit-builder path, digital gold, insurance, and a credit-score check. These pages are the frontend. Accounts, offers, and payments connect later.'],
-        ['q' => 'Is a loan live on this website?', 'a' => 'No. You can walk the screens and send a preview form. Nothing is passed to a lender, insurer, or payment gateway yet.'],
-        ['q' => 'Who is the app for?', 'a' => 'The journey is designed for salaried and self-employed people in India who want one place for a short-term loan, a larger personal loan, a small gold saving, and basic cover.'],
-        ['q' => 'What will a loan check ask for?', 'a' => 'A typical check uses identity, address, income, and a bank account. Eligibility, amount, and price depend on the partner and the profile. This site does not run that check yet.'],
-        ['q' => 'Are the calculators an offer?', 'a' => 'No. EMI, SIP, and deposit figures are maths from the numbers you type. A real offer can be higher or lower, or not available.'],
-        ['q' => 'How should I pay when this is live?', 'a' => 'Only inside the app or the official repayment page. IndianKredit will not ask you to send a fee to a personal UPI ID, wallet, or staff account.'],
+        ['q' => 'What is IndianKredit?', 'a' => 'IndianKredit is a financial super app for instant loans, personal loans, a credit-builder path, digital gold, mutual funds, insurance, and a credit-score check. You can apply, track repayment, and manage these products in one account.'],
+        ['q' => 'How do I apply for a loan?', 'a' => 'Choose a product, enter your mobile and the amount, and submit. We review the application with our lending partners and share an offer, with interest and fees, before you accept.'],
+        ['q' => 'Who is the app for?', 'a' => 'IndianKredit is for salaried and self-employed people in India who want one place for a short-term loan, a larger personal loan, gold, mutual funds, and cover.'],
+        ['q' => 'What does a loan check ask for?', 'a' => 'A check uses identity, address, income, and a bank account. The amount and price depend on your profile and the lending partner.'],
+        ['q' => 'Are the calculators the final offer?', 'a' => 'Calculators estimate a payment from the numbers you enter. Your offer shows the exact interest, fees, and schedule before you accept.'],
+        ['q' => 'How do I repay?', 'a' => 'Repay inside the app or on the official repayment page. IndianKredit never asks you to send a fee to a personal UPI ID, wallet, or staff account.'],
     ],
 
     'jobs' => [
@@ -106,8 +106,8 @@ return [
             'card_text' => 'A short application for smaller amounts and a faster decision.',
             'card_stat' => 'Up to ₹20,000',
             'card_cta' => 'Apply now',
-            'description' => 'Preview the IndianKredit instant loan journey for amounts up to ₹20,000.',
-            'summary' => 'Instant loan is the small-ticket path: a shorter form, a shorter tenure, and a decision meant to land in minutes once a lending partner is connected.',
+            'description' => 'Apply for an IndianKredit instant loan of up to ₹20,000.',
+            'summary' => 'Instant loan is the small-ticket path: a short form, a short tenure, and a decision that is shared in minutes.',
             'amount_min' => 1000,
             'amount_max' => 20000,
             'points' => ['Built for gaps between paydays', 'Paperless identity check', 'Repayment dates shown up front'],
@@ -115,7 +115,7 @@ return [
             'documents' => ['PAN', 'Aadhaar', 'Selfie match', 'Bank statement or account check'],
             'steps' => [
                 ['title' => 'Share the basics', 'text' => 'Mobile, city, and the amount you have in mind.'],
-                ['title' => 'Complete KYC', 'text' => 'Digital PAN and Aadhaar when the partner flow is live.'],
+                ['title' => 'Complete KYC', 'text' => 'Verify PAN and Aadhaar on your phone.'],
                 ['title' => 'Read the offer', 'text' => 'Amount, tenure, interest, and fees before you accept.'],
                 ['title' => 'Repay in the app', 'text' => 'Due dates and a receipt stay on your loan.'],
             ],
@@ -139,7 +139,7 @@ return [
             'card_text' => 'Medical, education, travel, or a home expense — one unsecured loan.',
             'card_stat' => 'Up to ₹5 lakh',
             'card_cta' => 'Apply now',
-            'description' => 'Preview the IndianKredit personal loan journey for amounts up to ₹5 lakh.',
+            'description' => 'Apply for an IndianKredit personal loan of up to ₹5 lakh.',
             'summary' => 'Personal loan is the wider shelf: a higher amount, a longer tenure, and the same rule — you see the price before you say yes.',
             'amount_min' => 20000,
             'amount_max' => 500000,
@@ -148,8 +148,8 @@ return [
             'documents' => ['PAN and Aadhaar', 'Income proof', 'Bank statements', 'Live selfie'],
             'steps' => [
                 ['title' => 'Tell us the purpose', 'text' => 'Pick personal loan and the amount you want to explore.'],
-                ['title' => 'Add income details', 'text' => 'Salary or business income, when the backend is ready.'],
-                ['title' => 'Compare the example EMI', 'text' => 'Use the calculator, then read the real offer later.'],
+                ['title' => 'Add income details', 'text' => 'Share salary or business income for the credit check.'],
+                ['title' => 'Review the EMI', 'text' => 'Use the calculator, then read the offer we send you.'],
                 ['title' => 'Accept only if it fits', 'text' => 'You can leave an offer. Nothing is due until you accept one.'],
             ],
             'example' => [
@@ -160,7 +160,7 @@ return [
             'calculator' => 'personal-loan',
             'faqs' => [
                 ['q' => 'Do I need collateral?', 'a' => 'This personal loan is designed as unsecured. The partner still checks income and credit.'],
-                ['q' => 'Can I prepay?', 'a' => 'Prepayment rules will be printed on the offer. They are not fixed on this preview.'],
+                ['q' => 'Can I prepay?', 'a' => 'Yes. The offer lists any part-payment or foreclosure charge before you accept.'],
             ],
         ],
         'credit-builder' => [
@@ -199,8 +199,8 @@ return [
             'card_text' => 'Start at ₹10 and keep a holding you can see in the app.',
             'card_stat' => 'From ₹10',
             'card_cta' => 'Invest now',
-            'description' => 'Preview digital gold on IndianKredit, starting from ₹10.',
-            'summary' => 'Digital gold is a small-ticket way to buy a gold holding. Live prices, purity, and a sell-back window come from a metal partner. Those figures are not live on this frontend.',
+            'description' => 'Buy digital gold on IndianKredit, starting from ₹10.',
+            'summary' => 'Buy a 24K gold holding from ₹10. The confirm screen shows the live price, grams, and the sell-back window before you pay.',
             'amount_min' => 10,
             'amount_max' => 100000,
             'points' => ['Start with a small rupee amount', 'Holding shown in the app', 'Price moves with the market'],
@@ -208,7 +208,7 @@ return [
             'documents' => ['Mobile number', 'PAN for higher amounts', 'Bank account'],
             'steps' => [
                 ['title' => 'Enter an amount', 'text' => 'From ₹10 upward, in rupees rather than grams if you prefer.'],
-                ['title' => 'See the price', 'text' => 'A live quote will sit on the confirm screen.'],
+                ['title' => 'See the price', 'text' => 'The confirm screen shows the live quote and the grams you receive.'],
                 ['title' => 'Confirm the buy', 'text' => 'Gold is allotted by the partner, not held as cash in IndianKredit.'],
                 ['title' => 'Sell when you choose', 'text' => 'Sell-back follows the partner window and the price that day.'],
             ],
@@ -218,36 +218,35 @@ return [
                 ['What you see next', 'Grams and a quote before you pay'],
             ],
             'faqs' => [
-                ['q' => 'Is the price fixed?', 'a' => 'No. Gold moves. The confirm screen is the quote that matters, and this preview does not show a live rate.'],
-                ['q' => 'Do I get jewellery?', 'a' => 'This product is a digital holding. Delivery or jewellery, if any, is a partner feature to be added later.'],
+                ['q' => 'Is the price fixed?', 'a' => 'No. Gold moves with the market. The confirm screen is the quote you accept.'],
+                ['q' => 'Do I get jewellery?', 'a' => 'This product is a digital gold holding you can sell back in the app. Physical delivery depends on the metal partner.'],
             ],
         ],
         'mutual-funds' => [
             'name' => 'Mutual Funds',
             'theme' => 'mist',
             'icon' => 'bi-pie-chart',
-            'kicker' => 'Coming soon',
+            'kicker' => 'Invest',
             'card_title' => 'Funds, in the same app',
-            'card_text' => 'A shelf for SIPs once a distribution partner is connected.',
-            'card_stat' => 'Not open yet',
-            'card_cta' => 'Join the list',
-            'coming_soon' => true,
-            'description' => 'Mutual funds on IndianKredit are a coming-soon page.',
-            'summary' => 'Mutual funds will sit beside gold so a monthly investing habit has a home. There is no scheme list, NAV, or order ticket on this preview.',
+            'card_text' => 'Start a monthly SIP or a one-time investment.',
+            'card_stat' => 'SIPs from ₹500',
+            'card_cta' => 'Invest now',
+            'description' => 'Start a mutual fund SIP on IndianKredit from ₹500 a month.',
+            'summary' => 'Mutual funds sit beside gold so a monthly investing habit has a home. You see the scheme, risk, and costs before you start a SIP.',
             'amount_min' => 100,
             'amount_max' => 100000,
-            'points' => ['SIP and lumpsum are both planned', 'Scheme facts before a purchase', 'No order is placed from this page'],
+            'points' => ['SIP and one-time investment', 'Scheme facts before you buy', 'Pause a SIP from your account'],
             'eligibility' => ['Indian resident with PAN', 'KYC as the fund partner requires'],
             'documents' => ['PAN', 'KYC', 'Bank account'],
             'steps' => [
-                ['title' => 'Tell us you want in', 'text' => 'Leave a note on the contact form.'],
-                ['title' => 'We open the shelf', 'text' => 'Schemes appear only after a partner is live.'],
+                ['title' => 'Choose a scheme', 'text' => 'Pick a fund and read the risk, cost, and past returns.'],
+                ['title' => 'Complete KYC', 'text' => 'PAN and KYC are completed in the app.'],
                 ['title' => 'Read the scheme', 'text' => 'Risk, costs, and past returns before you invest.'],
                 ['title' => 'Start a SIP', 'text' => 'A monthly amount you can pause.'],
             ],
             'faqs' => [
-                ['q' => 'Can I invest today?', 'a' => 'No. This page is a placeholder so the navigation matches the rest of the app.'],
-                ['q' => 'Where do I try the maths?', 'a' => 'The SIP calculator runs locally in your browser and does not buy units.'],
+                ['q' => 'Can I invest today?', 'a' => 'Yes. Apply with the amount you want to start, then complete KYC to place the order.'],
+                ['q' => 'Can I estimate a SIP first?', 'a' => 'Yes. The SIP calculator shows how a monthly amount can grow. Your order uses the scheme you select.'],
             ],
         ],
         'insurance' => [
@@ -259,8 +258,8 @@ return [
             'card_text' => 'Accident and health-style plans, priced before you buy.',
             'card_stat' => 'Simple plans',
             'card_cta' => 'Insure now',
-            'description' => 'Preview insurance covers on IndianKredit.',
-            'summary' => 'Insurance on IndianKredit is a short list of covers: accident, hospital cash, and a simple income shock. Wording, premium, and claims belong to an insurer. Nothing here is a policy.',
+            'description' => 'Buy accident and hospital cover on IndianKredit.',
+            'summary' => 'Choose accident cover, hospital cash, or income protection. The premium, wording, and exclusions are shown before you pay, and the insurer issues the policy.',
             'amount_min' => 50000,
             'amount_max' => 500000,
             'points' => ['Premium shown before purchase', 'Exclusions on the same screen', 'Claims go to the insurer, not a staff account'],
@@ -270,7 +269,7 @@ return [
                 ['title' => 'Pick a cover', 'text' => 'Accident, hospital cash, or income shock.'],
                 ['title' => 'Answer the short questions', 'text' => 'Only what that plan uses to price.'],
                 ['title' => 'Read exclusions', 'text' => 'What is not paid is part of the decision.'],
-                ['title' => 'Pay the insurer', 'text' => 'Premium goes to the insurer through the app, when live.'],
+                ['title' => 'Pay the premium', 'text' => 'Pay in the app. The insurer issues the policy.'],
             ],
             'plans' => [
                 ['name' => 'Accident cover', 'text' => 'A lump sum for a listed accidental event.'],
@@ -278,8 +277,8 @@ return [
                 ['name' => 'Income shock', 'text' => 'A short payout if an accident stops work.'],
             ],
             'faqs' => [
-                ['q' => 'Is this a mediclaim policy?', 'a' => 'Hospital cash is a fixed daily amount. It is not a full health indemnity plan unless an insurer later adds one.'],
-                ['q' => 'Can I buy a policy on this page?', 'a' => 'No. You can see the shape of the product. Purchase opens with the insurer integration.'],
+                ['q' => 'Is hospital cash a full mediclaim?', 'a' => 'Hospital cash pays a fixed amount per day in hospital. The policy screen states exactly what is covered before you buy.'],
+                ['q' => 'Can I buy a policy here?', 'a' => 'Yes. Submit your details, review the premium and exclusions, and pay in the app.'],
             ],
         ],
     ],
@@ -292,7 +291,7 @@ return [
             'results' => ['primary' => 'Monthly EMI', 'interest' => 'Total interest', 'total' => 'Total payable'],
             'fields' => [
                 ['name' => 'amount', 'label' => 'Amount', 'min' => 1000, 'max' => 20000, 'step' => 500, 'value' => 10000],
-                ['name' => 'rate', 'label' => 'Illustrative annual rate (%)', 'min' => 1, 'max' => 36, 'step' => 0.1, 'value' => 18],
+                ['name' => 'rate', 'label' => 'Annual interest rate (%)', 'min' => 1, 'max' => 36, 'step' => 0.1, 'value' => 18],
                 ['name' => 'months', 'label' => 'Months', 'min' => 1, 'max' => 12, 'step' => 1, 'value' => 3],
             ],
         ],
@@ -303,7 +302,7 @@ return [
             'results' => ['primary' => 'Monthly EMI', 'interest' => 'Total interest', 'total' => 'Total payable'],
             'fields' => [
                 ['name' => 'amount', 'label' => 'Loan amount', 'min' => 20000, 'max' => 500000, 'step' => 5000, 'value' => 200000],
-                ['name' => 'rate', 'label' => 'Illustrative annual rate (%)', 'min' => 1, 'max' => 36, 'step' => 0.1, 'value' => 18],
+                ['name' => 'rate', 'label' => 'Annual interest rate (%)', 'min' => 1, 'max' => 36, 'step' => 0.1, 'value' => 18],
                 ['name' => 'months', 'label' => 'Months', 'min' => 3, 'max' => 60, 'step' => 1, 'value' => 24],
             ],
         ],
@@ -314,7 +313,7 @@ return [
             'results' => ['primary' => 'Monthly EMI', 'interest' => 'Total interest', 'total' => 'Total payable'],
             'fields' => [
                 ['name' => 'amount', 'label' => 'Loan amount', 'min' => 500000, 'max' => 10000000, 'step' => 50000, 'value' => 3000000],
-                ['name' => 'rate', 'label' => 'Illustrative annual rate (%)', 'min' => 1, 'max' => 18, 'step' => 0.1, 'value' => 8.5],
+                ['name' => 'rate', 'label' => 'Annual interest rate (%)', 'min' => 1, 'max' => 18, 'step' => 0.1, 'value' => 8.5],
                 ['name' => 'months', 'label' => 'Months', 'min' => 12, 'max' => 360, 'step' => 12, 'value' => 240],
             ],
         ],
@@ -325,18 +324,18 @@ return [
             'results' => ['primary' => 'Monthly EMI', 'interest' => 'Total interest', 'total' => 'Total payable'],
             'fields' => [
                 ['name' => 'amount', 'label' => 'Loan amount', 'min' => 100000, 'max' => 3000000, 'step' => 10000, 'value' => 800000],
-                ['name' => 'rate', 'label' => 'Illustrative annual rate (%)', 'min' => 1, 'max' => 24, 'step' => 0.1, 'value' => 10],
+                ['name' => 'rate', 'label' => 'Annual interest rate (%)', 'min' => 1, 'max' => 24, 'step' => 0.1, 'value' => 10],
                 ['name' => 'months', 'label' => 'Months', 'min' => 12, 'max' => 84, 'step' => 1, 'value' => 60],
             ],
         ],
         'business-loan' => [
             'name' => 'Business loan EMI',
             'type' => 'emi',
-            'text' => 'Sketch a business loan payment. This is not an approval.',
+            'text' => 'Estimate a business loan payment before you apply.',
             'results' => ['primary' => 'Monthly EMI', 'interest' => 'Total interest', 'total' => 'Total payable'],
             'fields' => [
                 ['name' => 'amount', 'label' => 'Loan amount', 'min' => 50000, 'max' => 2000000, 'step' => 10000, 'value' => 500000],
-                ['name' => 'rate', 'label' => 'Illustrative annual rate (%)', 'min' => 1, 'max' => 36, 'step' => 0.1, 'value' => 18],
+                ['name' => 'rate', 'label' => 'Annual interest rate (%)', 'min' => 1, 'max' => 36, 'step' => 0.1, 'value' => 18],
                 ['name' => 'months', 'label' => 'Months', 'min' => 3, 'max' => 60, 'step' => 1, 'value' => 36],
             ],
         ],
@@ -379,7 +378,7 @@ return [
             'body' => [
                 'A loan offer is a small contract. The marketing page can talk about speed. The offer screen should talk about money: how much you receive, how much you return, and on which dates.',
                 'Start with the amount credited to your account. Processing fees taken up front make the cash-in-hand smaller than the principal on the agreement. Read both numbers.',
-                'Then read the total payable. Two loans can share an EMI and still cost different amounts if the tenure or the fees differ. The calculator on this site lets you type a rate so you can see that shape. It is not the offer.',
+                'Then read the total payable. Two loans can share an EMI and still cost different amounts if the tenure or the fees differ. Use the calculator to compare, then read the offer before you accept.',
                 'Last, check the exit. A fair offer says whether part-payment is allowed and what it costs. If a person on a call rushes you past that screen, stop and read it anyway.',
             ],
         ],
@@ -396,8 +395,8 @@ return [
             ],
             'body' => [
                 'Digital gold is attractive because ₹10 feels harmless. That is also the risk: small buys add up, and the price is still a market price.',
-                'Before a partner quote is live here, treat any gold number you see in a screenshot as a sample. The confirm step, when it exists, should show grams, price, and fees on one screen.',
-                'Ask one practical question: if you needed the money next month, how would you sell, and how long would the bank credit take? If the page cannot answer that, you do not have the product yet. You have a brochure.',
+                'The confirm screen shows grams, the live price, and any fee before you pay. Accept only that quote.',
+                'Before you buy, check how a sale is credited back to your bank and how long that credit takes. Those details are on the gold screen.',
             ],
         ],
         [
@@ -409,12 +408,12 @@ return [
             'points' => [
                 'The report looks at borrowings, limits, and payment dates.',
                 'One app cannot rewrite a report overnight.',
-                'A sample meter on a website is not your score.',
+                'Your score names the bureau and the date of the check.',
             ],
             'body' => [
                 'A credit score compresses your report into a number. The report itself is the list of accounts, limits, enquiries, and whether payments landed on time.',
-                'Checking a score, when this product is live, should tell you the bureau and the date of the pull. A gauge with no name and no date is a drawing.',
-                'If you are rebuilding a file, on-time payments matter more than a new enquiry. That is the idea behind the credit builder path, and it is still not a promise that a number will move.',
+                'A score check names the bureau and the date of the pull, so you know which report you are looking at.',
+                'If you are rebuilding a file, on-time payments matter more than a new enquiry. Credit builder is built for that habit. No product can promise a number will move.',
             ],
         ],
     ],
@@ -422,31 +421,31 @@ return [
     'legal' => [
         'terms' => [
             'title' => 'Terms',
-            'description' => 'Preview terms for the IndianKredit marketing pages.',
-            'intro' => 'These paragraphs explain how to use this frontend. They are not a loan agreement, insurance contract, or investment mandate. Replace them with counsel-approved terms before launch.',
+            'description' => 'Terms for using IndianKredit loans, gold, investments, and insurance.',
+            'intro' => 'These terms cover use of the IndianKredit website and app. A loan, gold order, mutual fund, or insurance policy is completed only when you accept that product’s offer.',
             'sections' => [
-                ['title' => 'What this website is', 'body' => 'IndianKredit pages describe a product that is still being built. Calculators run in your browser. Forms do not create an account, a sanction, or a policy.'],
-                ['title' => 'No offer', 'body' => 'Amounts such as ₹20,000 or ₹5 lakh describe the shelves we are designing. They are not an offer to you. Only a future offer screen, from a regulated partner, can do that.'],
-                ['title' => 'Acceptable use', 'body' => 'Do not submit another person’s identity, and do not use the forms to probe for a real credit decision. The forms are not connected.'],
+                ['title' => 'Accounts and applications', 'body' => 'You must give accurate information. An application is reviewed with the relevant partner. Submitting a form does not by itself sanction a loan, buy gold, or issue a policy.'],
+                ['title' => 'Offers', 'body' => 'Amounts such as ₹20,000 or ₹5 lakh are the product limits. Your offer states the amount, interest, fees, and tenure you can accept. You can decline an offer.'],
+                ['title' => 'Acceptable use', 'body' => 'Use your own identity. Do not submit another person’s details or misuse the repayment and score tools.'],
             ],
         ],
         'privacy' => [
             'title' => 'Privacy',
-            'description' => 'How the IndianKredit preview treats information you type.',
-            'intro' => 'This is a layout for the privacy page. It is not a filed privacy policy. Do not submit real PAN, Aadhaar, or card numbers.',
+            'description' => 'How IndianKredit uses the information you share.',
+            'intro' => 'We use your details to open an account, assess an application, complete KYC, and contact you about the product you chose.',
             'sections' => [
-                ['title' => 'What you can type today', 'body' => 'Apply, contact, and repayment forms are checked in the browser session and then discarded. They are not written to a customer database.'],
-                ['title' => 'What a live app would collect', 'body' => 'A real journey needs mobile number, identity, and bank data to make a decision and to pay you. That collection starts only when a backend and a partner agreement exist, with a policy that names the entities.'],
-                ['title' => 'Cookies', 'body' => 'Laravel uses a session cookie so a form error can be shown once.'],
+                ['title' => 'What we collect', 'body' => 'Applications and messages include your name, mobile, email, city, and the product details you submit. A loan, gold, or insurance journey can also ask for PAN, Aadhaar, income, and bank details.'],
+                ['title' => 'How we use it', 'body' => 'We use this information to review your request, share it with the lending, metal, fund, insurance, or bureau partner for that product, and send you the next step.'],
+                ['title' => 'Cookies', 'body' => 'The site uses a session cookie to keep you signed in and to show a form error once.'],
             ],
         ],
         'grievance' => [
             'title' => 'Grievance redressal',
-            'description' => 'Where a complaint will go once IndianKredit is live.',
-            'intro' => 'A live lending or insurance journey needs a named grievance officer and a timed escalation. Those names are not invented here.',
+            'description' => 'How to raise a complaint with IndianKredit.',
+            'intro' => 'Write to us if an application, repayment, gold order, or policy needs a review. Loan and insurance complaints are handled with the partner that issued that product.',
             'sections' => [
-                ['title' => 'For this preview', 'body' => 'Use the contact form and choose Grievance. The message is not delivered to a team yet. You will see a confirmation that it stayed on the preview.'],
-                ['title' => 'When partners are live', 'body' => 'This page should list the app grievance contact, the lender or insurer contact, and the regulator route that applies to that product. Loan complaints and insurance complaints do not go to the same desk.'],
+                ['title' => 'How to write', 'body' => 'Use the contact form and choose Grievance, or email hello@indiankredit.com. Include your mobile number and the loan, order, or policy reference.'],
+                ['title' => 'What happens next', 'body' => 'We acknowledge the complaint and work with the lender, insurer, or other partner responsible for that product. You receive the outcome on the same email or mobile.'],
             ],
         ],
         'fraud-safety' => [

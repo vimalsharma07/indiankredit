@@ -8,7 +8,7 @@
         <div class="container">
             <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ route('home') }}">Home</a><span>/</span><span>About</span></nav>
             <h1>One app for the money tasks that usually take five.</h1>
-            <p class="lead-copy">IndianKredit is the screen people open for a small loan, a larger personal loan, a gold holding, and basic cover. Regulated partners do the lending, the metal, and the insurance. Their names will be listed when those agreements exist.</p>
+            <p class="lead-copy">IndianKredit is where people apply for a small loan, a larger personal loan, gold, mutual funds, and cover. Regulated partners lend, hold the metal, manage the funds, and issue the policies.</p>
         </div>
     </section>
     <section class="section">
@@ -23,18 +23,18 @@
                 <div class="col-md-4">
                     <article class="plain-card h-100">
                         <h2 class="h4">The partners</h2>
-                        <p class="mb-0">A loan is disbursed by a lender. Gold is allotted by a metal partner. A policy is issued by an insurer. IndianKredit does not invent those licences.</p>
+                        <p class="mb-0">A loan is disbursed by a lending partner. Gold is allotted by a metal partner. A policy is issued by an insurer. You see each partner on the offer.</p>
                     </article>
                 </div>
                 <div class="col-md-4">
                     <article class="plain-card h-100">
-                        <h2 class="h4">This website</h2>
-                        <p class="mb-0">You are on the frontend. Forms confirm that the screen works. They do not open an account or move money.</p>
+                        <h2 class="h4">Your account</h2>
+                        <p class="mb-0">Create an account, submit an application, and track the offer, repayment, or order from the same place.</p>
                     </article>
                 </div>
             </div>
             <div class="section-head mt-5">
-                <h2>Desks we are building for</h2>
+                <h2>How the team is organised</h2>
             </div>
             <div class="job-grid">
                 @foreach (['Product' => 'Screens, words, and the order of a task.', 'Credit' => 'The checklist between an application and a partner decision.', 'Care' => 'People who explain an offer without rushing it.'] as $desk => $text)

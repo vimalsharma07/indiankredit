@@ -22,13 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateHint();
     }
 
-    document.querySelector('#show-sample-score')?.addEventListener('click', () => {
-        const panel = document.querySelector('#sample-score');
-        if (panel) {
-            panel.hidden = false;
-        }
-    });
-
     document.querySelectorAll('[data-copy-target]').forEach((button) => {
         button.addEventListener('click', async () => {
             const value = document.querySelector(button.dataset.copyTarget)?.textContent?.trim();

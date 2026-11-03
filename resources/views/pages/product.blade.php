@@ -52,7 +52,7 @@
                         @endforeach
                     </ul>
 
-                    <h2 class="h4 mt-4">What a live check asks for</h2>
+                    <h2 class="h4 mt-4">What the check asks for</h2>
                     <div class="chips mt-2">
                         @foreach ($product['documents'] as $item)
                             <span>{{ $item }}</span>
@@ -60,7 +60,7 @@
                     </div>
 
                     @if (!empty($product['example']))
-                        <h2 class="h4 mt-5">Example only, not an offer</h2>
+                        <h2 class="h4 mt-5">A typical example</h2>
                         <table class="example-table">
                             @foreach ($product['example'] as $row)
                                 <tr>
@@ -106,7 +106,7 @@
                         @if (!empty($product['calculator']))
                             <a class="btn btn-line w-100 mt-2" href="{{ route('calculators.show', $product['calculator']) }}">Open calculator</a>
                         @endif
-                        <p class="fine mt-3 mb-0 {{ $product['theme'] === 'ink' ? 'text-white-50' : '' }}">Interest and fees are shown on the offer, before you accept. This page does not quote a rate.</p>
+                        <p class="fine mt-3 mb-0 {{ $product['theme'] === 'ink' ? 'text-white-50' : '' }}">Interest and fees are shown on your offer, before you accept.</p>
                     </aside>
                 </div>
             </div>

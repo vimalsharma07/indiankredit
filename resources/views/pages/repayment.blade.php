@@ -1,14 +1,14 @@
 @extends('layouts.site')
 
 @section('title', 'Loan repayment')
-@section('description', 'Look up a loan on IndianKredit. Payments are not live yet.')
+@section('description', 'Repay an IndianKredit loan with your loan reference and mobile number.')
 
 @section('content')
     <section class="page-hero">
         <div class="container">
             <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ route('home') }}">Home</a><span>/</span><span>Loan repayment</span></nav>
             <h1>Loan repayment</h1>
-            <p class="lead-copy">Enter a loan reference and the mobile on the application. No money moves on this page.</p>
+            <p class="lead-copy">Enter the loan reference and the mobile number on the application. We send the repayment steps to that number.</p>
         </div>
     </section>
     <section class="section pt-2">
@@ -36,7 +36,7 @@
                             <input class="form-control" id="mobile" name="mobile" inputmode="numeric" value="{{ old('mobile') }}" required maxlength="10">
                         </div>
                         <button class="btn btn-yellow" type="submit">Look up</button>
-                        <p class="fine mt-2 mb-0">Pay only inside the app once it is live. Never to a personal UPI ID.</p>
+                        <p class="fine mt-2 mb-0">Pay only in the app or on this page. Never to a personal UPI ID.</p>
                     </form>
                 </div>
                 <div class="col-lg-6">

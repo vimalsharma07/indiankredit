@@ -1,7 +1,7 @@
 @extends('layouts.site')
 
 @section('title', 'Sitemap')
-@section('description', 'Every IndianKredit frontend page.')
+@section('description', 'Every page on the IndianKredit website.')
 
 @section('content')
     <section class="page-hero">

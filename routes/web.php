@@ -26,6 +26,7 @@ Route::get('/standards', [SiteController::class, 'standards'])->name('standards'
 Route::get('/careers', [SiteController::class, 'careers'])->name('careers');
 Route::get('/faq', [SiteController::class, 'faq'])->name('faq');
 Route::get('/credit-score', [SiteController::class, 'creditScore'])->name('credit-score');
+Route::post('/credit-score', [SiteController::class, 'creditScoreSubmit'])->middleware('throttle:20,1')->name('credit-score.submit');
 Route::get('/corporate', [SiteController::class, 'corporate'])->name('corporate');
 Route::get('/refer', [SiteController::class, 'refer'])->name('refer');
 Route::get('/sitemap', [SiteController::class, 'sitemap'])->name('sitemap');

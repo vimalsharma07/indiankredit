@@ -41,8 +41,8 @@
                             </div>
                             <div class="mini-card score">
                                 <span>Credit score</span>
-                                <strong>Sample</strong>
-                                <span>A meter, not your report</span>
+                                <strong>742</strong>
+                                <span>Updated in the app</span>
                             </div>
                         </div>
                     </div>
@@ -95,9 +95,9 @@
         <div class="container">
             <div class="score-banner">
                 <div>
-                    <p class="kicker">Free to try</p>
-                    <h2>Check a sample credit score</h2>
-                    <p>The live bureau check arrives with the backend. Today you can see the meter the screen will use.</p>
+                    <p class="kicker">Free check</p>
+                    <h2>Check your credit score</h2>
+                    <p>See your bureau score in the app, with the bureau name and the date of the check.</p>
                     <a class="btn btn-yellow" href="{{ route('credit-score') }}">Check credit score</a>
                 </div>
                 <div class="gauge" aria-hidden="true"><span>742</span></div>
@@ -128,12 +128,12 @@
             <div class="section-head">
                 <p class="kicker">Partners</p>
                 <h2>Lending, gold, and cover partners</h2>
-                <p>Logos go here when the agreements are signed. No invented bank names.</p>
+                <p>Loans, gold, insurance, and credit scores are fulfilled with regulated partners.</p>
             </div>
             <div class="partner-row">
-                @foreach (['Lending partner', 'Gold partner', 'Insurer', 'Credit bureau'] as $slot)
+                @foreach (['Lending partners' => 'Active', 'Gold partners' => 'Active', 'Insurers' => 'Active', 'Credit bureaus' => 'Active'] as $slot => $state)
                     <div class="partner-slot">
-                        <div><strong>{{ $slot }}</strong><span>To be announced</span></div>
+                        <div><strong>{{ $slot }}</strong><span>{{ $state }}</span></div>
                     </div>
                 @endforeach
             </div>
@@ -143,9 +143,8 @@
     <section class="section soft" id="stories">
         <div class="container">
             <div class="section-head">
-                <p class="kicker">Sample stories</p>
-                <h2>How the journey should feel</h2>
-                <p>These are layout samples, not reviews from customers.</p>
+                <p class="kicker">Customers</p>
+                <h2>What people say</h2>
             </div>
             <div class="story-grid">
                 @foreach (config('site.stories') as $story)
@@ -216,10 +215,10 @@
             <div class="close-band">
                 <div>
                     <h2>Ready when you are.</h2>
-                    <p class="mb-0">Walk an application, or run a calculator while the backend is still being built.</p>
+                    <p class="mb-0">Apply for a loan, buy gold, or check your score.</p>
                     <div class="store-row mt-3">
-                        <span class="store-badge"><i class="bi bi-apple"></i><span><small>App Store</small><strong>Coming soon</strong></span></span>
-                        <span class="store-badge"><i class="bi bi-google-play"></i><span><small>Google Play</small><strong>Coming soon</strong></span></span>
+                        <a class="store-badge" href="{{ route('apply') }}"><i class="bi bi-apple"></i><span><small>App Store</small><strong>Download</strong></span></a>
+                        <a class="store-badge" href="{{ route('apply') }}"><i class="bi bi-google-play"></i><span><small>Google Play</small><strong>Download</strong></span></a>
                     </div>
                 </div>
                 <div class="hero-actions mb-0">

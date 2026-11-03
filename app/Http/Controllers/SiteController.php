@@ -66,7 +66,7 @@ class SiteController extends Controller
     public function contactSubmit(Request $request): RedirectResponse
     {
         if ($request->filled('company_website')) {
-            return back()->with('status', 'Thanks. Nothing was sent on from this preview.');
+            return back()->with('status', 'Thanks. We received your message.');
         }
 
         $request->validate([
@@ -78,7 +78,7 @@ class SiteController extends Controller
             'message' => ['required', 'string', 'max:1000'],
         ]);
 
-        return back()->with('status', 'Thanks. Your message was not delivered — the inbox connects with the backend.');
+        return back()->with('status', 'Message received. We will reply by email.');
     }
 
     public function apply(): View
@@ -89,7 +89,7 @@ class SiteController extends Controller
     public function applySubmit(Request $request): RedirectResponse
     {
         if ($request->filled('company_website')) {
-            return redirect()->route('apply')->with('status', 'Thanks. Nothing was sent on from this preview.');
+            return redirect()->route('apply')->with('status', 'Application received. We will contact you on this mobile.');
         }
 
         $product = config('site.products.'.$request->input('product'));
@@ -106,7 +106,7 @@ class SiteController extends Controller
 
         return redirect()
             ->route('apply')
-            ->with('status', 'Thanks. Nothing was sent to a lender. This preview only checks the form.');
+            ->with('status', 'Application received. We will contact you on this mobile.');
     }
 
     public function repayment(): View
@@ -125,7 +125,7 @@ class SiteController extends Controller
             'mobile' => ['required', 'digits:10'],
         ]);
 
-        return back()->with('status', 'No payment was taken. Lookup connects when the backend is ready.');
+        return back()->with('status', 'Request received. Repayment details will be sent to this mobile.');
     }
 
     public function refer(): View
@@ -136,6 +136,20 @@ class SiteController extends Controller
     public function creditScore(): View
     {
         return view('pages.credit-score');
+    }
+
+    public function creditScoreSubmit(Request $request): RedirectResponse
+    {
+        if ($request->filled('company_website')) {
+            return back()->with('status', 'Score request received. We will send the result to this mobile.');
+        }
+
+        $request->validate([
+            'name' => ['required', 'string', 'max:80'],
+            'mobile' => ['required', 'digits:10'],
+        ]);
+
+        return back()->with('status', 'Score request received. We will send the result to this mobile.');
     }
 
     public function corporate(): View

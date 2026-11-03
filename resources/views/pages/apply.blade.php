@@ -1,14 +1,14 @@
 @extends('layouts.site')
 
 @section('title', 'Apply')
-@section('description', 'Start an IndianKredit application preview. Details are not sent to a lender.')
+@section('description', 'Apply for an IndianKredit loan, gold, investment, or cover.')
 
 @section('content')
     <section class="page-hero">
         <div class="container">
             <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ route('home') }}">Home</a><span>/</span><span>Apply</span></nav>
             <h1>Apply now</h1>
-            <p class="lead-copy">Tell us the product and the amount. This does not create a sanction.</p>
+            <p class="lead-copy">Tell us the product and the amount. We review it and share an offer before you accept.</p>
         </div>
     </section>
     <section class="section pt-2">
@@ -56,7 +56,7 @@
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-yellow" type="submit">Continue</button>
-                                <p class="fine mt-2 mb-0">Nothing is stored or sent to a lender.</p>
+                                <p class="fine mt-2 mb-0">We will contact you on this mobile with the next step.</p>
                             </div>
                         </div>
                     </form>
@@ -65,9 +65,9 @@
                     <aside class="side-card theme-yellow">
                         <span class="kicker">What happens next</span>
                         <ol class="mt-3">
-                            <li>You see this form accept the fields.</li>
-                            <li>A partner check is added with the backend.</li>
-                            <li>An offer, if any, shows interest and fees before a yes.</li>
+                            <li>We receive your application.</li>
+                            <li>A lending partner reviews your details.</li>
+                            <li>Your offer shows interest and fees before you accept.</li>
                         </ol>
                     </aside>
                 </div>

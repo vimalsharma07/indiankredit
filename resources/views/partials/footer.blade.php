@@ -45,8 +45,8 @@
             </div>
         </div>
         <div class="footer-base">
-            <p class="mb-0">© {{ date('Y') }} {{ config('site.name') }}. Frontend preview for layout and pages.</p>
-            <p class="mb-0">Not a loan offer, insurance contract, or investment advice. Partner names and live rates come later.</p>
+            <p class="mb-0">© {{ date('Y') }} {{ config('site.name') }}. Loans, gold, investments, and cover.</p>
+            <p class="mb-0">Offers are subject to eligibility. Read the charges before you accept.</p>
         </div>
     </div>
 </footer>

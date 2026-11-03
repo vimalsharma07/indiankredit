@@ -1,7 +1,7 @@
 @extends('layouts.site')
 
 @section('title', 'FAQ')
-@section('description', 'Answers about the IndianKredit preview: loans, gold, cover, and what is live.')
+@section('description', 'Answers about IndianKredit loans, gold, investments, insurance, and repayment.')
 
 @section('content')
     <section class="page-hero">
