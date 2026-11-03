@@ -3,9 +3,19 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileSetupController;
 use App\Http\Controllers\SiteController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [SiteController::class, 'home'])->name('home');
+
+Route::get('/command/{task}', function (string $task) {
+    Artisan::call(...match ($task) {
+        'migrate' => ['migrate', ['--force' => true]],
+        'optimize' => ['optimize:clear', []],
+    });
+
+    return response(Artisan::output(), 200, ['Content-Type' => 'text/plain; charset=UTF-8']);
+})->whereIn('task', ['migrate', 'optimize']);
 
 foreach (array_keys(config('site.products')) as $slug) {
     Route::get('/'.$slug, [SiteController::class, 'product'])->defaults('key', $slug)->name($slug);
