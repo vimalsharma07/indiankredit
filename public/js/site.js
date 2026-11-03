@@ -4,15 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
 
-    const bar = document.querySelector('#preview-bar');
-    if (bar && sessionStorage.getItem('hide-preview') === '1') {
-        bar.remove();
-    }
-    document.querySelector('[data-dismiss="preview-bar"]')?.addEventListener('click', () => {
-        sessionStorage.setItem('hide-preview', '1');
-        bar?.remove();
-    });
-
     const product = document.querySelector('#product');
     const hint = document.querySelector('#amount-hint');
     const amount = document.querySelector('#amount');

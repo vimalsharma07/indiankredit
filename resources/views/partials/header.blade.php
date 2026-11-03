@@ -3,10 +3,6 @@
     $companyRoutes = collect(config('site.company'))->pluck('route')->all();
 @endphp
 <header class="site-header">
-    <div class="preview-bar" id="preview-bar">
-        <p>Preview build. Forms, offers, and payments are not connected yet.</p>
-        <button type="button" data-dismiss="preview-bar" aria-label="Dismiss preview note">&times;</button>
-    </div>
     <div class="nav-wrap">
         <div class="container">
             <nav class="site-nav navbar navbar-expand-lg" aria-label="Primary">
@@ -75,6 +71,15 @@
                                 <i class="bi bi-credit-card"></i>
                                 Repay
                             </a>
+                            @auth
+                                <a class="repay-link" href="{{ route('profile.setup') }}">Account</a>
+                                <form class="nav-logout" method="post" action="{{ route('logout') }}">
+                                    @csrf
+                                    <button class="repay-link" type="submit">Log out</button>
+                                </form>
+                            @else
+                                <a class="repay-link" href="{{ route('login') }}">Log in</a>
+                            @endauth
                             <a class="btn btn-yellow nav-apply" href="{{ route('apply') }}">
                                 Apply Now <i class="bi bi-arrow-right"></i>
                             </a>

@@ -437,7 +437,7 @@ return [
             'sections' => [
                 ['title' => 'What you can type today', 'body' => 'Apply, contact, and repayment forms are checked in the browser session and then discarded. They are not written to a customer database.'],
                 ['title' => 'What a live app would collect', 'body' => 'A real journey needs mobile number, identity, and bank data to make a decision and to pay you. That collection starts only when a backend and a partner agreement exist, with a policy that names the entities.'],
-                ['title' => 'Cookies', 'body' => 'Laravel uses a session cookie so a form error can be shown once. The preview bar remembers a dismiss flag in this browser only.'],
+                ['title' => 'Cookies', 'body' => 'Laravel uses a session cookie so a form error can be shown once.'],
             ],
         ],
         'grievance' => [
