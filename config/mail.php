@@ -115,4 +115,19 @@ return [
         'name' => env('MAIL_FROM_NAME', env('APP_NAME', 'Laravel')),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Central mail service defaults
+    |--------------------------------------------------------------------------
+    |
+    | Used by App\Services\MailService when a caller passes only an address
+    | and a body. The mailer, host, and from address stay in this file.
+    |
+    */
+
+    'defaults' => [
+        'subject' => env('MAIL_DEFAULT_SUBJECT', env('APP_NAME', 'IndianKredit')),
+        'html' => filter_var(env('MAIL_BODY_IS_HTML', true), FILTER_VALIDATE_BOOLEAN),
+    ],
+
 ];
